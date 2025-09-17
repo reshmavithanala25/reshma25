@@ -2,52 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Simple Website</title>
+  <title>Facebook Clone</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      text-align: center;
-      padding: 50px;
+      background: #f0f2f5;
     }
-    header {
-      background-color: #333;
+
+    /* Header */
+    .header {
+      background-color: #1877f2;
       color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .search-bar input {
+      padding: 6px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 250px;
+      background-color: white;
+      height: calc(100vh - 60px);
+      float: left;
+      padding: 20px;
+      box-shadow: 1px 0 3px rgba(0,0,0,0.1);
+    }
+
+    /* Main Feed */
+    .feed {
+      margin-left: 270px;
       padding: 20px;
     }
-    a {
-      color: #007BFF;
-      text-decoration: none;
+
+    .post {
+      background-color: white;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 16px;
+
+    .post h4 {
+      margin: 0 0 10px 0;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Welcome to My Website</h1>
-    <p>A simple static webpage</p>
-  </header>
+  <div class="header">
+    <div class="logo">facebook</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Facebook">
+    </div>
+  </div>
 
-  <main>
-    <p>This is a paragraph explaining what the site is about.</p>
-    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
-    <br>
-    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+  <div class="sidebar">
+    <p><strong>Menu</strong></p>
+    <ul>
+      <li>Home</li>
+      <li>Friends</li>
+      <li>Messages</li>
+      <li>Notifications</li>
+      <li>Settings</li>
+    </ul>
+  </div>
 
-    <br>
-    <button onclick="sayHello()">Click Me</button>
-  </main>
-
-  <script>
-    function sayHello() {
-      alert("Hello and welcome to my website!");
-    }
-  </script>
+  <div class="feed">
+    <div class="post">
+      <h4>John Doe</h4>
+      <p>Hello world! This is my first post.</p>
+    </div>
+    <div class="post">
+      <h4>Jane Smith</h4>
+      <p>Just had a great coffee today ☕️</p>
+    </div>
+  </div>
 
 </body>
 </html>
+
