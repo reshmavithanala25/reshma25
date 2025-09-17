@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Simple Page</title>
+  <title>My Simple Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Site</h1>
-  <p>This is a sample HTML page created in 15 lines.</p>
-  <img src="https://via.placeholder.com/150" alt="Sample Image">
-  <p>Learn more by visiting the link below:</p>
-  <a href="https://www.example.com" target="_blank">Go to Example.com</a>
+
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A simple static webpage</p>
+  </header>
+
+  <main>
+    <p>This is a paragraph explaining what the site is about.</p>
+    <img src="https://via.placeholder.com/200" alt="Placeholder Image">
+    <br>
+    <a href="https://www.example.com" target="_blank">Visit Example.com</a>
+
+    <br>
+    <button onclick="sayHello()">Click Me</button>
+  </main>
+
+  <script>
+    function sayHello() {
+      alert("Hello and welcome to my website!");
+    }
+  </script>
+
 </body>
 </html>
